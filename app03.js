@@ -14,6 +14,10 @@ function setup() {
 }
 
 function draw() {
-    clear();
-    circle(mouseX, mouseY, 100);
+    // clear();
+    // 直径をマウスのx座標にする
+    // circle(mouseX, mouseY, 100);
+    // circle(mouseY, mouseX, 100);
+    // 直径をランダムにする
+    circle(mouseX, mouseY, random(100));
 }
