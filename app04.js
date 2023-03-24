@@ -8,7 +8,8 @@ function setup() {
     noStroke();
 
     // d = 0; // 直径の初期化
-    circleColor = random(255);
+    // RGB色指定
+    circleColor = color(random(255), random(255), random(255));
     reset();
 }
 
@@ -35,7 +36,10 @@ function draw() {
 function reset() {
     d = 0;
     bgColor = circleColor;
-    circleColor = random(255);
+    // グレースケール
+    // circleColor = random(255);
+    // RGB色指定
+    circleColor = color(random(255), random(255), random(255));
 }
 
 // 画面をマウスでクリックするとリセット
